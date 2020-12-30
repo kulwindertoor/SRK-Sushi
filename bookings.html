@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRK SUSHI</title>
+    <script src="scripts/bookings.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bookings.css">
+</head>
+<body>
+    <div class="booking__nav">
+        <div id="logo">
+            <a href="index.html">S R K <span class="box-logo">S U S H I</span></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="underline-li">Home</a></li>
+                <li><a href="ratings.html" class="underline-li">Ratings</a></li>
+                <li><a href="blog.html" class="underline-li">Blog</a></li>
+                <li><a href="fortuneWheel.html" class="underline-li">Fortune Wheel</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="bookings">  
+        <div class="bookings__container">
+            <div class="bookings__formContainer">
+                <form
+                    onsubmit="return false"
+                    class="bookings__form">
+                    <p
+                        class="booking__form__topic">Booking details</p>
+
+                    <div class="bookings__formOption">
+                        <p>First name</p>
+                        <input
+                            id="bookings__firstNameID"
+                            name="fname"
+                            type="text">
+                    </div>
+                    <div class="bookings__formOption">
+                        <p>Last name</p>
+                        <input
+                            id="bookings__lastNameID"
+                            name="lname"
+                            type="text">
+                    </div>
+
+                    <div class="bookings__formOption">
+                        <p>E-mail address</p>
+                        <input
+                            id="bookings__emailID" 
+                            name="email"
+                            type="text">
+                    </div>
+                    <div class="bookings__DateTimeOption">
+                        <div class="bookings__dateContainer">
+                            <p>Date</p>
+                            <input type="date" id="booking__date" name="booking__date">
+                        </div>
+                        <div class="bookings__dateContainer">
+                            <p>Time</p>
+                            <input type="time" id="booking__time" name="appt">
+                        </div>
+                    </div>
+                    <div class="bookings__PeopleOption">
+                        <p>Number of people</p>
+                        <select class="bookings__people__dropDown" name="cars" id="cars">
+                            <option value="1">1 person</option>
+                            <option value="2">2 people</option>
+                            <option value="3">3 people</option>
+                            <option value="4">4 people</option>
+                            <option value="5">5 people</option>
+                            <option value="6">6 people</option>
+                            <option value="7">7 people</option>
+                        </select>
+                    </div>
+                    <div class="bookings__SubmitOption">
+                        <button
+                            onclick="onBookingSubmit()"
+                            class="bookings__submit__button">
+                            Make your booking
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="booking__textContainer">
+                <div class="booking__mainText">
+                    <div class="booking__rightColumn">
+                        <h1>FEEL THE TASTE</h1>
+                        <p>Although the restaurant is located not far
+                            from the city center, it has one of the biggest
+                             outdoor seatings in the city and a vast area inside.</p>
+                        <hr/>
+                        <p>SRK SUSHI is located in the heart of Oslo. You can find our restaurant at the gates of Grünerløkka by the “Akerselva”, the main river of the capital city</p>
+                        <div class="bookings__MenuRating">
+                            <a
+                                href="menu.html">
+                                <button 
+                                    class="bookings__menuButton">
+                                    See our menu
+                                </button>
+                            </a>
+                            <a
+                                href="ratings.html">
+                                <button 
+                                    class="bookings__ratingButton">
+                                    See What others say about us 
+                                </button>
+                            </a>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>@SRK SUSHI GROUP 2020</p>
+    </div>
+    
+
+</body>
+</html>
