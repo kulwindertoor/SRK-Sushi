@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href= "css/ratings.css" rel= "stylesheet" type= "text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/ratings.js"></script>
+    <title>Document</title>
+
+    
+</head>
+<body onload="renderFeedbacks()">
+    <div class="ratings__nav">
+        <div id="logo">
+            <a href="index.html">S R K <span class="box-logo">S U S H I</span></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="underline-li">HOME</a></li>
+                <li><a href="ratings.html" class="underline-li">RATINGS</a></li>
+                <li><a href="blog.html" class="underline-li">BLOG</a></li>
+                <li><a href="fortuneWheel.html" class="underline-li">FORTUNE WHEEL</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="ratings">
+        
+        <div class="ratings__header">
+            <h1>HELP US GET BETTER</h1>
+            <p>We believe customer thoughts are the most important to the success. Leave us a feedback, <br>so we can treat you better next time 
+            </p>
+            <hr class='ratings__headerBotton__line'>
+        </div>
+
+        <div class="ratings__imageForm__container">
+            <div class="ratings__image">
+            </div>
+
+            <div class="ratings__feedback">
+                <form onsubmit="return false">
+                <div class="ratings__feedback__inner_container">
+                    <h3>Let us know your thoughts </h3>
+                    <p id="ratings__feedback_reply"></p>
+                    
+                    <div class="ratings__feedback__section">
+                        <p>First name</p>
+                        <input 
+                            id="ratings__FirstNameID"
+                            name="fname"
+                            type="text"/>
+                    </div>
+
+                    <div class="ratings__feedback__section">
+                        <p>Last name</p>
+                        <input 
+                            id="ratings__LastNameID"
+                            name="lname"
+                            type="text" />
+                    </div>
+                    
+                    <div class="ratings__feedback__section">
+                        <p>Message</p>
+                        <textarea 
+                            id="ratings__MessageID"
+                            type="text" ></textarea>
+                    </div>
+
+                    <div class="ratings__feedback__section star__ratings">
+                        <p>Rate us</p>
+                        <fieldset class="rating" >
+                            <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                    </div>
+                    <div class="ratings__feedback__Sibmit__container">
+                        <button
+                            type="submit"
+                            onclick="putFeedbackToStorage()"
+                            class="ratings__feedback__Sibmit">
+                            Send us
+                        </button>
+                    </div>
+                </form>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ratings__reviews" >
+            <h3>See what others say about us</h3>
+
+            <div class="rating__review">
+                <div class="ratings__avatar">
+                    <img src="./images/Borut-Pahor.jpg"
+                         alt="Avatar" 
+                         class="avatar">
+                </div>
+                <div class="ratings__review_description">
+                    <h4 class="ratings__review__name">Boru Pahor</h4>
+                    <p class="ratings__review__date">20.05.2020</p>
+                    <p class="ratings__review__stars">&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                    <p>Excellent quality. I should come again with my family here. Awesome</p>
+                </div>
+                
+            </div>
+            <div id="ratings__reviews__add"></div>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <p>@SRK SUSHI GROUP 2020</p>
+    </div>
+</body>    
+</html>
