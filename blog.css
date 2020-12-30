@@ -1,0 +1,224 @@
+/* Font style for Logo */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+
+/* Font style for navbar */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+body{
+    background: #212121;
+    margin: 0;
+    width: 100%;
+
+}
+
+.blog__nav{
+    width: 100%;
+    background-color: #171717;
+    padding-bottom: 1rem;
+}
+#logo{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Londrina Shadow', cursive;
+    position: relative;
+    letter-spacing: 0.25rem;
+}
+
+#logo a{
+    text-decoration: none;
+    color: teal;
+    font-weight: bold;
+}
+
+#logo span{
+    background-color: teal;
+    color: white;
+    border-radius: 2px;
+    padding: 0 10px;
+    margin-left: -5px;
+}
+.blog__nav ul{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style: none;
+    z-index: 20;
+    position: relative;
+}
+
+@media (max-width: 568px){
+    .blog__nav ul{
+        flex-direction: column;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+.blog__nav nav a{
+    color: rgb(206, 205, 205);
+    text-decoration: none;
+    transition: 0.7s;
+    font-family: 'Handlee', cursive;
+    font-size: 1.1rem;
+    letter-spacing: 0.25rem;
+    cursor: pointer;
+    z-index: 30;
+}
+.underline-li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .5s;
+}
+
+.underline-li:hover::after{
+    width: 100%;
+}
+
+h3{
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    color:  rgb(206, 205, 205);
+}
+
+li{
+    line-height: 2rem;
+    font-size: 1rem;
+    color: rgb(206, 205, 205);
+}
+.main-nav ul{
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: -5px;
+}
+
+.blog-container{
+    background-color: #212121;
+    padding: 20px;
+}
+.blog{
+    margin-top: -2.6rem;
+    width: 100%;
+    background-image: linear-gradient(to bottom,rgba(56, 56, 56, 0.473) 5%, rgba(32, 32, 32, 0.699) 90%), url('../images/other/blog.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-bottom: 100px;
+}
+.blog-header{
+    color: rgb(206, 205, 205);
+    text-align: center;
+    font-family: monospace;
+    margin: 40px;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.blog-header h1{
+    font-weight: 300;
+    letter-spacing: 1rem;
+}
+.main-nav a{
+    text-decoration: none;
+    display: block;
+    color: rgb(206, 205, 205);
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    margin-top: 1.0rem;
+    border: 1px solid rgb(131, 131, 130);
+    text-align: center;
+    justify-content: center;
+    border-radius: 2px;
+    transition: all.3s ease;
+    margin: 0 2vw;
+}
+
+.blog-body-container{
+    position: relative;
+    display: flex;
+    height: auto;
+    background-color: rgba(51, 51, 51, 0.815);
+    color: rgb(206, 205, 205);
+    margin: 1.5vw;
+}
+
+h3{
+    font-weight: 300;
+}
+
+.blog-selection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+    font-family: sans-serif;
+    border-right: 1px solid #A6A6A6;
+    justify-content: center;
+}
+
+.p-1, .p-2, .p-3, .p-4, .p-5, .p-6, .p-7{
+    border-bottom: 1px solid rgb(158, 158, 158);
+    padding: 8px;
+    font-size: 1rem;
+    border-bottom: 1px solid teal;
+}
+
+h3:hover{
+    color: teal;
+    cursor: pointer;
+}
+
+.blog-discription{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.topic{
+    color:  rgb(206, 205, 205);
+    margin: 30px 0 30px 20px;
+    font-family: monospace;
+
+}
+
+.definition{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.guidlines{
+    font-size: 1rem;
+    color: orange;
+}
+.footer{
+    position: relative;
+    background-color: #171717;
+    width: 100%;
+    height: 100px;
+    color:#A6A6A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5rem;
+}
+.footer > p{
+    margin: 0 10px;
+    text-align: center;
+} 
