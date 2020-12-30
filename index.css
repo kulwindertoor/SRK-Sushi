@@ -1,0 +1,147 @@
+/* Font style for Logo */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+
+/* Font style for navbar */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body{
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+  }
+  
+.gradient {
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.911) 3%, rgba(9, 34, 24, 0.473) 60%, rgba(39, 38, 38, 0.219) 90%);
+    width: 100%;
+    height:100vh;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+  
+#bg-video {
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+#logo{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Londrina Shadow', cursive;
+    position: relative;
+}
+
+#logo a{
+    text-decoration: none;
+    color: teal;
+}
+
+#logo span{
+    background-color: teal;
+    color: #cfcfcf;
+    border-radius: 2px;
+    padding: 0 10px;
+    margin-left: -5px;
+}
+
+#main-page-header ul{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style: none;
+    z-index: 20;
+    position: relative;
+}
+
+@media (max-width: 568px){
+    #main-page-header ul{
+        flex-direction: column;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+#main-page-header nav a{
+    color: rgb(206, 205, 205);
+    text-decoration: none;
+    transition: 0.7s;
+    font-family: 'Handlee', cursive;
+    font-size: 1.1rem;
+    letter-spacing: 0.25rem;
+    cursor: pointer;
+    z-index: 30;
+}
+.underline-li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #d1d0d0;
+    transition: .5s;
+}
+
+.underline-li:hover::after{
+    width: 100%;
+}
+
+.button-section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+
+}
+.button{
+    position: relative;
+    display: inline-flex;
+    margin: 5px 20px 5px 20px;
+    color: #cfcfcf;
+    text-decoration: none;
+    border-bottom: 2px double;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.25em;
+    line-height: 1.8em;
+    z-index: 30;
+    font-family: 'Handlee', cursive;
+    font-size: 1.7rem;
+}
+
+.line{
+    color: #fff;
+    position: relative;
+    padding: 5px 0;
+    font-size: 2rem;
+}
+
+.button:hover{
+    color: rgb(226, 219, 219);
+
+
+}
+
+.booking-menu-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
