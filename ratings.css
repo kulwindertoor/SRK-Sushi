@@ -1,0 +1,354 @@
+/* Font style for Logo */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+
+/* Font style for navbar */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+body{
+    position: relative;
+    margin: 0;
+    background-color: #1B1C1D;
+}
+.ratings__nav{
+    width: 100%;
+    padding-bottom: 1rem;
+    background-color: #171717;
+}
+#logo{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Londrina Shadow', cursive;
+    position: relative;
+    letter-spacing: 0.25rem;
+}
+
+#logo a{
+    text-decoration: none;
+    color: teal;
+    font-weight: bold;
+}
+
+#logo span{
+    background-color: teal;
+    color: white;
+    border-radius: 2px;
+    padding: 0 10px;
+    margin-left: -5px;
+}
+.ratings__nav ul{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style: none;
+    z-index: 20;
+    position: relative;
+}
+
+@media (max-width: 568px){
+    .ratings__nav ul{
+        flex-direction: column;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+.ratings__nav nav a{
+    color: rgb(206, 205, 205);
+    text-decoration: none;
+    transition: 0.7s;
+    font-family: 'Handlee', cursive;
+    font-size: 1.1rem;
+    letter-spacing: 0.25rem;
+    cursor: pointer;
+    z-index: 30;
+}
+.underline-li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .5s;
+}
+
+.underline-li:hover::after{
+    width: 100%;
+}
+
+.ratings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ratings__header{
+    width: 100%;
+    text-align: center;
+}
+.ratings__header > h1{
+    color: #A6A6A6;
+    font-family: agenda;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 35px;
+    letter-spacing: .2em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin: 30px 20px;
+}
+.ratings__header > p{
+    color: #A6A6A6;
+    /* font-family: agenda; */
+    font-weight: 100;
+    font-size: 20px;
+    font-style: normal;
+    margin: 0 10px;
+    line-height: 1.5em;
+    letter-spacing: 0.05rem;
+}
+.ratings__header .ratings__headerBotton__line{
+    margin-top: 10px;
+    height: 1px;
+    width: 10%;
+    background-color:teal;
+    border:none;
+}
+
+.ratings__imageForm__container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.ratings__image{
+    margin-top: 50px;
+    height: 700px;
+    width: 70%;
+    background-image: url('../images/food/AI_RESTAURANT_Vienna_lenasblackbook-14.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.ratings__feedback{
+    right: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 75px;
+    height: 650px;
+    width: 600px;
+    background-color: #212121;
+}
+.ratings__feedback__inner_container{
+    padding: 0 100px;
+}
+.ratings__feedback__inner_container >h3{
+    margin-top: 50px;
+    text-align: center;
+    font-family: agenda;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: .01em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    color: #A6A6A6;
+    font-size: 1.8rem;
+}
+@media (max-width:850px){
+    .ratings__feedback{
+        position: relative;
+        width: 90vw;
+    }
+    .ratings__imageForm__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ratings__image{
+        height: 50vh;
+        width: 100%;
+    }
+    .ratings__feedback__inner_container{
+        padding: 0 20px;
+    }
+}
+#ratings__feedback_reply{
+    text-align: center;
+    color: teal;
+    margin-top: -1rem;
+    width: 100%;
+}
+.ratings__feedback__section {
+    margin-top: 2rem;
+}
+.ratings__feedback__section > p {
+    color: #A6A6A6;
+}
+
+.ratings__feedback__section > input {
+    position: relative;
+    margin-top: -3rem;
+    border: none;
+    outline: 0;
+    height: 30px;
+    width: 100%;
+    background-color: #212121!important;
+    border-bottom: 1px solid rgb(109, 106, 106);
+    color:#A6A6A6 ;
+}
+.ratings__feedback__section > input:focus {
+    border-bottom: 1px solid teal;
+}
+.star__ratings >fieldset, label { margin: 0; padding: 0; }
+.star__ratings .rating { 
+    border: none;
+    float: left;
+  }
+  
+  .star__ratings .rating > input { display: none; } 
+  .star__ratings .rating > label:before { 
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+.star__ratings{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.star__ratings .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+}
+  
+.star__ratings .rating > label { 
+    color: #ddd; 
+   float: right; 
+}
+
+.star__ratings .rating > input:checked ~ label,
+.star__ratings .rating:not(:checked) > label:hover,
+.star__ratings .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } 
+  
+.star__ratings .rating > input:checked + label:hover, 
+.star__ratings .rating > input:checked ~ label:hover,
+.star__ratings .rating > label:hover ~ input:checked ~ label, 
+.star__ratings .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+.ratings__feedback__section > textarea{
+    border: none;
+    outline: 0;
+    width: 100%;
+    background-color: #212121!important;
+    border-bottom: 1px solid rgb(109, 106, 106);
+    color:#A6A6A6 ;
+    height: 100px;
+}
+.ratings__feedback__section > textarea:focus{
+    border-bottom: 1px solid teal;
+}
+.ratings__feedback__Sibmit__container{
+    margin: 20px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.ratings__feedback__Sibmit{
+    margin-bottom: 50px;
+    outline: 0;
+    border:1px solid rgb(109, 106, 106);
+    width: 200px;
+    height: 30px;
+    background-color:  #212121;
+    color: rgb(109, 106, 106);
+}
+.ratings__feedback__Sibmit:hover{
+    border:1px solid white;
+    background-color:  #212121;
+    color: white;
+}
+
+.ratings__reviews{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.rating__review{
+    position: relative;
+    width: 80%;
+    margin: 0px 20px;
+    background-color:  #212121;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+.ratings__avatar .avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ratings__review_description{
+    margin-left: 20px;
+    color:#A6A6A6;
+}
+.ratings__avatar{
+    margin-top: 20px;
+}
+.ratings__review__name{
+    line-height: 0.3rem;
+}
+.ratings__review__date{
+    line-height: 0.3rem;
+    color: rgb(109, 106, 106);
+}
+.ratings__review__stars{
+    line-height: 0.5rem;
+}
+.ratings__reviews > h3{
+    color: #A6A6A6;
+    font-weight: 100;
+    font-size: 30px;
+    font-style: normal;
+    margin: 0 10px;
+    line-height: 1.5em;
+    letter-spacing: 0.1rem;
+    margin: 50px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color:#171717 ;
+    text-align: center;
+    color:#696969; 
+    letter-spacing: 0.5rem;
+}
+.footer > p{
+    margin: 10px;
+}
+#ratings__reviews__add{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
