@@ -1,0 +1,304 @@
+/* Font style for Logo */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+
+/* Font style for navbar */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.booking__nav{
+    width: 100%;
+    background-color: #171717;
+}
+#logo{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Londrina Shadow', cursive;
+    position: relative;
+    letter-spacing: 0.25rem;
+}
+
+#logo a{
+    text-decoration: none;
+    color: teal;
+    font-weight: bold;
+}
+
+#logo span{
+    background-color: teal;
+    color: white;
+    border-radius: 2px;
+    padding: 0 10px;
+    margin-left: -5px;
+}
+.booking__nav ul{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style: none;
+    z-index: 20;
+    position: relative;
+}
+
+@media (max-width: 568px){
+    .booking__nav ul{
+        flex-direction: column;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+
+.booking__nav nav a{
+    color: rgb(206, 205, 205);
+    text-decoration: none;
+    transition: 0.7s;
+    font-family: 'Handlee', cursive;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    cursor: pointer;
+    z-index: 30;
+}
+.underline-li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .5s;
+}
+
+.underline-li:hover::after{
+    width: 100%;
+}
+
+.bookings{
+    width: 100%;
+    background-image: url('../images/booking.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.bookings__container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0,0.5));
+}
+.bookings__formContainer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 450px;
+    height: 650px;
+    background-color: #212121;
+    color: #A6A6A6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bookings__form{
+    padding: 10px 30px;
+}
+.booking__form__topic{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+.bookings__formOption > input{
+    border: none;
+    background-color: #21212100;
+    border-bottom: 1px solid #A6A6A6;
+    width: 100%;
+    outline: 0;
+    color: #A6A6A6;
+    height: 30px;
+}
+.bookings__formOption > input:focus{
+    border-bottom: 1px solid teal;
+ 
+}
+.bookings__DateTimeOption{
+    width: 100%;
+    display: flex;
+}
+.bookings__dateContainer{
+    width: 40%;
+}
+.bookings__dateContainer > input{
+    border: none;
+    background-color: #21212100;
+    border-bottom: 1px solid #A6A6A6;
+    width: 90%;
+    outline: 0;
+    color: #A6A6A6;
+}
+.bookings__dateContainer > input:focus{
+    border-bottom: 1px solid teal;
+ 
+}
+.bookings__dateContainer{
+    width: 50%;
+}
+.bookings__DateTimeOption input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    font-size: 1.6rem;
+}
+.bookings__DateTimeOption input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    font-size: 1.5rem;
+}
+.bookings__PeopleOption{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.bookings__people__dropDown{
+    outline: 0;
+    border: none;
+    height: 20px;
+    width: 45%;
+    background-color: #21212100 ;
+    color:#A6A6A6 ;
+    border-bottom: 1px solid  #A6A6A6;
+    margin-right: 5%;
+}
+.bookings__SubmitOption{
+    width: 100%;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bookings__submit__button{
+    width: 200px;
+    height: 40px;
+    background-color: #21212100;
+    outline: 0;
+    color:#A6A6A6 ;
+    border: 1px solid #A6A6A6;
+
+}
+.bookings__submit__button:hover{
+    color: white;
+    border: 1px solid white;
+}
+.booking__textContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.booking__mainText{
+    position: relative;
+    width:700px;
+    margin-left: auto;
+    margin-right: 0;
+    
+}
+.booking__rightColumn{
+    height: 650px;
+    background-color:  #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.booking__mainText .booking__rightColumn > h1{
+    font-weight: bolder;
+    font-style: normal;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    color: #cecccc;
+    font-size: 35px;
+}
+.booking__rightColumn > p{
+    color:#A6A6A6;
+    margin: 10px 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1rem;
+
+}
+.booking__rightColumn > hr{
+    height: 1px;
+    width: 20%;
+    background-color: teal;
+    border: none;
+}
+.footer{
+    position: relative;
+    background-color: #171717;
+    width: 100%;
+    height: 100px;
+    color:#A6A6A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5rem;
+}
+.footer > p{
+    margin: 0 10px;
+    text-align: center;
+}
+.bookings__MenuRating{
+    margin-top: 50px;
+    display: flex;
+}
+.bookings__menuButton{
+    outline: 0;
+    height: 40px;
+    width: 250px;
+    background-color:#d3d1d1 ;
+    text-transform: uppercase;
+}
+.bookings__ratingButton{
+    outline: 0;
+    background-color: #212121;
+    border: 1px solid #A6A6A6 ;
+    color:#A6A6A6 ;
+    width: 250px;
+    height: 40px;
+    text-transform: uppercase;
+}
+.bookings__menuButton:hover{
+    background-color:#ffffff ;
+}
+.bookings__ratingButton:hover{
+    border: 1px solid #ffffff ;
+    color:#ffffff ;
+}
+@media (max-width:1050px){
+    .bookings__container{
+        flex-direction: column;
+    }
+}
+@media (max-width:503px){
+    .booking__mainText{
+        width: 100%;
+    }
+    .bookings__MenuRating{
+        flex-direction: column;
+    }
+    .bookings__formContainer{
+        width: 100%;
+    }
+}
